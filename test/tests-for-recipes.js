@@ -26,9 +26,9 @@ describe('recipes', function () {
             .then(function (res) {
                 expect(res).to.have.status(200);
                 expect(res).to.be.json;
-                expect(res).to.be.a('array');
+                expect(res.body).to.be.a('array');
                 //question... line below
-                res.body.length.should.be.at.least(1);
+                expect(res.body.length).to.be.at.least(1);
                 const expectedKeys = ['id', 'name', 'ingredients'];
                 res.body.forEach(function (item) {
                     expect(item).to.be.a("object");
@@ -76,9 +76,6 @@ describe('recipes', function () {
             })
             .then(function (res) {
                 expect(res).to.have.status(204);
-                expect(res).to.be.json;
-                expect(res.body).to.be.a("object");
-                expect(res.body).to.deep.equal(updateData);
             })
     });
 
