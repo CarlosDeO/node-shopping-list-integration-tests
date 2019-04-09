@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: AJXPWQETzXIQRoUPtKX/KL3BvgzC+yE1AgKlFiJP/5lfBVKA+8BerLyP3/IFW8z/8ye1unoiGhFG3tHAyFk/g6SJh/0aCalnrTR44AOVlFGWWNybs3OWZjN44rpzk8qLYi6fTBnyHmI+bNLfTeWzO2U3TqWJ5qmTfvCNCzL9Ccu6RRc7ivkGJ9EEyIn6OGYc+yOrASFt9EzQc1muxCia5WZX5v6BBxPmy/5kgPB/HBdUDrh+MFwqfR5z47SgMjzMDPhbBqahV2O+bcTntHbDi67od3ujBnwS/MEL84E7W/zMOPTmfjqjoBpSN7Any0Vq8bEq5GGCjYkKOHV108/x+y6KbM2FNKMiLgGQ+gwLhtkJpNgnl/q9KZK210kRzGvux+BObGwydgaSNJMvDBNh0PN3mtRbM+Uq5D5t0cxNWcJEwpQaCI4+TCqvS/Xd9vtAdAWScQYMwCjguSvKgmbTeRmgZ0synESJXZwSaxvwNYu3QgpRuxysVdxDzMlfAP8FW7Fwx+aIoq//aEBiwZPZ2cXVtGnjNkQt1yp5ZHHIs28NCum/4IucV+kJPJSRDnA6ky92Cosc3Xl4B1jRtPxaIzxWkQflgRnyiX4OeG7pwXQwjC/LDJUlwba4ZRulaPWvpIS/q3dFtEww4Xvm47gGIJH4AXjyXCqpaVGwKd/fh+Q=
+  app: intense-crag-97721
+  on:
+    repo: CarlosDeO/node-shopping-list-integration-tests

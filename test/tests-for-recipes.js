@@ -13,11 +13,11 @@ chai.use(chaiHttp);
 
 describe('recipes', function () {
     before(function () {
-        return runServer;
+        return runServer();
     });
 
     after(function () {
-        return closeServer;
+        return closeServer();
     });
 
     it('it should list items on GET', function () {
